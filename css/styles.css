@@ -1,15 +1,36 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.list {
-  list-style: none;
-}
+
 :root {
   --main-text-color: #212121;
 }
 
 :root {
   --main-font-family: "Roboto";
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .logo,
@@ -29,47 +50,52 @@ body {
 
 .accent {
   font-family: "Raleway";
-
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-}
+ }
+
 .nav-link {
-  text-decoration: none;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  cursor: pointer;
 }
+
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus{ 
   color: #2196f3;
 }
 
+.site-nav .link.current {
+  color: #2196F3;
+}
+
+
 .auth-link {
-  text-decoration: none;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  cursor: pointer;
 }
 
 .auth-link:hover,
 .auth-link:focus {
   color: #2196f3;
 }
+
 /* Головний герой */
+
 .hero {
   background: #2f303a;
 }
+
 .hero-title {
   font-family: var(--main-font-family);
   font-weight: 900;
@@ -80,8 +106,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .hero-btn {
-  /* font-family: var(--main-font-family); */
+  font-family: inherit
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -95,9 +122,11 @@ body {
 /* Можливості студії */
 .studio-capabilities {
 }
+
 .studio-main-title {
   font-size: 0;
 }
+
 .studio-title {
   font-family: var(--main-font-family);
   font-weight: 700;
@@ -107,6 +136,7 @@ body {
   text-transform: uppercase;
   color: var(--main-text-color);
 }
+
 .studio-text {
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -115,6 +145,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /* Приклади робіт */
 .work-examp-title {
   font-family: var(--main-font-family);
@@ -125,6 +156,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
 /* Команда */
 .team-main-title {
   font-family: var(--main-font-family);
@@ -165,8 +197,9 @@ body {
   top: 2094px; */
   background: #2f303a;
 }
+
 .accent-footer {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -182,6 +215,7 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .footer-nav {
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -198,12 +232,11 @@ body {
 
 /* Portfolio */
 /* Filters */
-/* .filters {
+
+/* .portf {
 } */
-.filters-title {
-  font-size: 0;
-}
-/* .filters-list {
+
+/* .portf-list {
 } */
 
 /* .filters-item {
@@ -223,6 +256,7 @@ body {
 .filters-btn:hover,
 .filters-btn:focus {
   color: #ffffff;
+  background-color: #2196F3;
 }
 
 .img-title {
