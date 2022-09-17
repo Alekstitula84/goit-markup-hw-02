@@ -22,7 +22,6 @@ body {
 }
 
 
-
 .list {
   list-style: none;
 }
@@ -63,9 +62,15 @@ body {
   }
 
 .accent {
-   color: #000000;
+  color: #000000;
   }
 
+  /* .span .posweb,
+  .span .accent {
+    margin: 0px;
+    padding: 0px;
+  } */
+  
 .nav-link {
   font-size: 14px;
   line-height: 1.14;
